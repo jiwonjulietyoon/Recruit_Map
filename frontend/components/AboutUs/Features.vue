@@ -1,5 +1,7 @@
 <template>
   <section>
+    
+    <!-- FEATURE 1 -->
     <div class="Title">주요 기능 1: 전체보기 vs 상세보기</div>
     <div class="Content">
       <p class="txt1">전체보기: 출퇴근 시간과 연봉을 한눈에 파악해요~</p>
@@ -57,23 +59,70 @@
         <img class="detailImg" src="https://i.imgur.com/tkM85n9.png" alt="">
       </div>
     </div>
+
+    <div class="divider"></div>
+
+    <!-- FEATURE 2 -->
+    <div class="Title">주요 기능 2: 나만의 조건 검색</div>
+    <div class="Content">
+      <p class="txt1">출발 지하철역을 설정해요~</p>
+      <p class="txt2">임의로 지정한 지하철역으로부터의 출퇴근 거리를 확인할 수 있습니다.</p>
+      <div class="imgBox">
+        <img class="departureImg" src="https://i.imgur.com/Dfkv5i9.png" alt="">
+      </div>
+      <br>
+      <p class="txt1">연봉, 출퇴근시간, 기업 규모로 필터링해요~</p>
+      <div class="imgBox">
+        <img class="filterImg" src="https://i.imgur.com/NjWptet.png" alt="">
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- FEATURE 3 -->
+    <div class="Title">주요 기능 3: 지도 탐방</div>
+    <div class="Content">
+      <p class="txt1">지도를 드래그하면 주변의 회사 목록이 좌측에 실시간으로 업데이트됩니다.</p>
+      <div class="imgBox">
+        <img class="navImg" src="https://i.imgur.com/aypSA7g.png" alt="">
+      </div>
+      <br>
+      <p class="txt1">검색창에서 특정 회사를 찾아볼 수도 있어요~</p>
+      <div class="imgBox">
+        <img src="https://i.imgur.com/iQ3vEO4.png" alt="" class="searchImg">
+      </div>
+    </div>
+
   </section>
 </template>
 
 <script>
 export default {
-  name: "Feature1"
+  name: "Features"
 }
 </script>
 
 <style lang="scss" scoped>
 @import '~/assets/aboutus.scss';
 
+.divider {
+  width: 100%;
+  height: 20px;
+  margin: 40px auto;
+  transform: skew(-30deg);
+  background: rgba(88, 180, 230, 0.5);
+  box-shadow: inset 0 0 10px 0px rgb(74, 165, 215), 0 0 2px 0 rgb(74, 165, 215);
+}
+
+// FEATURE 1
 .overviewImg {
   height: 200px;
 }
 .detailImg {
   height: 300px;
+}
+.markerDesc {
+  max-width: 600px;
 }
 .markerRow {
   display: flex;
@@ -89,11 +138,27 @@ export default {
       display: inline-block;
     }
     .label {
-      font-size: 12px;
+      font-size: 14px;
     }
   }
 }
 
 
+
+// FEATURE 2
+.departureImg {
+  height: 200px;
+}
+.filterImg {
+  height: 150px;
+}
+
+// FEATURE 3
+.navImg {
+  height: 200px;
+}
+.searchImg {
+  height: 150px;
+}
 
 </style>

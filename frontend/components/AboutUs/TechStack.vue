@@ -19,8 +19,7 @@ export default {
 <style lang="scss" scoped>
 @import '@/assets/aboutus.scss';
 
-img {
-  width: 300px;
-  margin: 10px 0;
+.imgBox, img {
+  width: 100%;
 }
 </style>

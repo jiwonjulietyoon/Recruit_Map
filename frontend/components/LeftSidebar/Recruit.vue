@@ -34,15 +34,22 @@ export default {
     return {
       hoverAds: false,
       ads: [
-        {
+         {
           id: 1,
+          type: 'button',
+          name: 'About Us',
+          action: 'openAboutUs',
+          img: 'https://i.imgur.com/21yAZ9a.png'
+        },
+        {
+          id: 2,
           type: 'link',
           name: 'SSAFY 3기 모집',
           url: 'https://www.ssafy.com/ksp/jsp/swp/swpMain.jsp',
           img: 'https://i.imgur.com/xs3Xd5D.png'
         },
         {
-          id: 2,
+          id: 3,
           type: 'link',
           name: '갤럭시 노트 10',
           url: 'https://www.samsung.com/sec/smartphones/galaxy-note10/',
@@ -55,21 +62,13 @@ export default {
           action: '',
           img: 'https://i.imgur.com/oa3SmRH.png'
         },
-        // {
-        //   id: 2,
-        //   type: 'button',
-        //   name: 'About Us',
-        //   action: 'openAboutUs',
-        //   img: 'https://i.imgur.com/21yAZ9a.png'
-        // },
         {
-          id: 3,
+          id: 5,
           type: 'link',
           name: 'HogangNono',
           url: 'https://hogangnono.com/',
           img: 'https://i.imgur.com/ChzqUVn.png'
         },
-        
       ]
     }
   },
